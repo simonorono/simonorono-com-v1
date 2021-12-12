@@ -4,12 +4,12 @@
 
 .links {
   @apply mt-6;
-}
 
-.links p {
-  @apply mt-2 sm:inline-block sm:mr-4;
-}
+  p {
+    @apply mt-2 sm:inline-block sm:mr-4;
+  }
 
-.links a {
-  @apply text-blue-800 hover:underline;
+  a {
+    @apply text-blue-800 hover:underline;
+  }
 }
