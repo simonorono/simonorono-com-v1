@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 .links {
-  @apply mt-6;
+  @apply space-y-4 sm:space-x-4 sm:space-y-0;
 
   p {
-    @apply mt-2 sm:inline-block sm:mr-4;
+    @apply sm:inline-block;
   }
 
   a {
