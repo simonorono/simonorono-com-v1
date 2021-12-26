@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 .links {
-  @apply space-y-4 sm:space-x-4 sm:space-y-0;
-
   p {
     @apply sm:inline-block;
   }
