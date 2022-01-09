@@ -4,7 +4,6 @@ interface Project {
   url: string,
   vcs: string,
   tags: string[],
-  wip: boolean,
 }
 
 interface Document {

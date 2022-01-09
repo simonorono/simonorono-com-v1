@@ -1,10 +1,16 @@
 [
   {
+    "name": "bitc",
+    "vcs": "https://github.com/simonorono/bitc",
+    "url": "https://bitc.mcbodev.com",
+    "description": "Bit containers for the JVM.",
+    "tags": ["kotlin", "jvm", "java"]
+  },
+  {
     "name": "RDex",
     "vcs": "https://github.com/simonorono/rdex",
     "url": "https://rdex.mcbodev.com",
     "description": "Pokédex web application with support for all main game regions. Not yet fully complete.",
-    "wip": true,
     "tags": ["typescript", "react", "redux", "tailwind", "vite", "pokeapi"]
   },
   {
@@ -12,7 +18,6 @@
     "vcs": "https://github.com/simonorono/rixel",
     "url": "https://rixel.mcbodev.com",
     "description": "Web application for pixelating images. Transformation is done in the browser. No server side code.",
-    "wip": false,
     "tags": ["typescript", "react", "canvas"]
   }
 ]
