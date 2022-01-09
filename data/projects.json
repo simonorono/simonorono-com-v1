@@ -1,0 +1,18 @@
+[
+  {
+    "name": "RDex",
+    "vcs": "https://github.com/simonorono/rdex",
+    "url": "https://rdex.mcbodev.com",
+    "description": "Pokédex web application with support for all main game regions. Not yet fully complete.",
+    "wip": true,
+    "tags": ["typescript", "react", "redux", "tailwind", "vite", "pokeapi"]
+  },
+  {
+    "name": "Rixel",
+    "vcs": "https://github.com/simonorono/rixel",
+    "url": "https://rixel.mcbodev.com",
+    "description": "Web application for pixelating images. Transformation is done in the browser. No server side code.",
+    "wip": false,
+    "tags": ["typescript", "react", "canvas"]
+  }
+]

@@ -1,16 +1,28 @@
 {
-  "name": "simonorono.com",
-  "version": "1.0.0",
-  "license": "Apache-2.0",
+  "name": "simonorono.comn",
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "dev": "next dev",
+    "build": "next build && next export -o dist && next-sitemap",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroicons/react": "^1.0.5",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "vanilla-lazyload": "^17.5.0"
   },
   "devDependencies": {
+    "@types/node": "17.0.8",
+    "@types/react": "17.0.38",
     "autoprefixer": "^10.4.2",
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.7",
+    "next-sitemap": "^1.6.261",
     "postcss": "^8.4.5",
     "tailwindcss": "^3.0.12",
-    "vite": "^2.7.10"
+    "typescript": "4.5.4"
   }
 }
