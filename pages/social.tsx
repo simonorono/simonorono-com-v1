@@ -1,10 +1,11 @@
 import React from 'react'
 import Head from 'next/head'
 import Layout from '../components/layout'
-import BackToIndex from '../components/back-to-index'
 import FixedSizeImage from '../components/fixed-size-image'
 import NewTabLink from '../components/new-tab-link'
 import { title } from '../utils'
+
+import mii from "../assets/mii.png"
 
 interface FriendCodeProps {
   title: string,
@@ -90,7 +91,7 @@ export default function Social() {
           />
 
           <FixedSizeImage
-            src="/mii.png"
+            src={mii.src}
             alt="Simón Oroño's Mii"
             width={150}
             height={150}
