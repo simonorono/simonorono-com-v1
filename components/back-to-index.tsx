@@ -5,9 +5,7 @@ export default function BackToIndex() {
   return (
     <div className="mt-8 sm:mt-0">
       <Link href="/" passHref>
-        <a className="hover:font-bold">
-          &lt;- go back
-        </a>
+        <a className="hover:font-bold">&lt;- go back</a>
       </Link>
     </div>
   )

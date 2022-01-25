@@ -5,17 +5,18 @@ import FixedSizeImage from '../components/fixed-size-image'
 import NewTabLink from '../components/new-tab-link'
 import { title } from '../utils'
 
-import mii from "../assets/mii.png"
+import mii from '../assets/mii.png'
 
 interface FriendCodeProps {
-  title: string,
-  code: string,
+  title: string
+  code: string
 }
 
 function FriendCode({ title, code }: FriendCodeProps) {
   return (
     <p>
-      <b>{title}</b>:<br /><span className="font-mono whitespace-nowrap">{code}</span>
+      <b>{title}</b>:<br />
+      <span className="whitespace-nowrap font-mono">{code}</span>
     </p>
   )
 }
@@ -59,36 +60,29 @@ export default function Social() {
     <>
       <Head>
         <title>{title('Social')}</title>
-        <meta name="description" content="Where to find me. Social and gaming profiles." />
+        <meta
+          name="description"
+          content="Where to find me. Social and gaming profiles."
+        />
       </Head>
 
-      <Layout
-        h1="Social"
-        h2="Where to find me. Social and gaming profiles."
-      >
-        <div className="mt-14 text-lg space-y-6 sm:max-w-lg">
+      <Layout h1="Social" h2="Where to find me. Social and gaming profiles.">
+        <div className="mt-14 space-y-6 text-lg sm:max-w-lg">
           <p>
-            The only social network I'm active on is Twitter and my handle is {twitterLink}.
+            The only social network I'm active on is Twitter and my handle is{' '}
+            {twitterLink}.
           </p>
 
           <p>
-            I can also be found on {ggAppLink}, {photomodeLink} and {pokedexTrackerLink}.
+            I can also be found on {ggAppLink}, {photomodeLink} and{' '}
+            {pokedexTrackerLink}.
           </p>
 
-          <FriendCode
-            title="Discord"
-            code="simonorono#7279"
-          />
+          <FriendCode title="Discord" code="simonorono#7279" />
 
-          <FriendCode
-            title="3DS Friend Code"
-            code="0147-6024-1272"
-          />
+          <FriendCode title="3DS Friend Code" code="0147-6024-1272" />
 
-          <FriendCode
-            title="Switch Friend Code"
-            code="SW-6250-6376-2138"
-          />
+          <FriendCode title="Switch Friend Code" code="SW-6250-6376-2138" />
 
           <FixedSizeImage
             src={mii.src}

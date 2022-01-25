@@ -16,23 +16,17 @@ export default function Projects() {
         <meta name="description" content="Projects built by Simón Oroño" />
       </Head>
 
-      <Layout
-        h1="Projects"
-        h2="by Simón Oroño"
-      >
-        <div className="mt-14 text-lg space-y-8">
+      <Layout h1="Projects" h2="by Simón Oroño">
+        <div className="mt-14 space-y-8 text-lg">
           <p className="sm:max-w-lg">
             Besides writing code for a living, I also like writing code for
-            recreational purposes. Here's a list of projects I've written
-            in my free time.
+            recreational purposes. Here's a list of projects I've written in my
+            free time.
           </p>
 
-          <div className="pt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6 pt-6 sm:grid-cols-2">
             {projects.map(project => (
-              <ProjectCard
-                key={project.name}
-                project={project}
-              />
+              <ProjectCard key={project.name} project={project} />
             ))}
           </div>
         </div>

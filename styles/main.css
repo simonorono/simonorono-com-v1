@@ -4,6 +4,6 @@
 
 @layer components {
   a.link {
-    @apply underline sm:no-underline sm:hover:underline text-blue-800;
+    @apply text-blue-800 underline sm:no-underline sm:hover:underline;
   }
 }

@@ -20,7 +20,7 @@ const links = [
   {
     name: 'social',
     url: '/social',
-  }
+  },
 ]
 
 export default function Links() {
@@ -29,44 +29,35 @@ export default function Links() {
   const path = router.pathname.substring(1)
 
   return (
-    <div className="space-x-6 sm:spac-x-4 sm:text-right">
+    <div className="sm:spac-x-4 space-x-6 sm:text-right">
       {path !== '' && (
-        <Link
-          href="/"
-          passHref
-        >
+        <Link href="/" passHref>
           <a className="link">home</a>
         </Link>
       )}
 
-      {links.filter(_ => !_.newTab && _.name !== path).map(link => (
-        <Link
-          key={link.name}
-          href={link.url}
-          passHref
-        >
-          <a className="link">
-            {link.name}
-          </a>
-        </Link>
-      ))}
+      {links
+        .filter(_ => !_.newTab && _.name !== path)
+        .map(link => (
+          <Link key={link.name} href={link.url} passHref>
+            <a className="link">{link.name}</a>
+          </Link>
+        ))}
 
-      {links.filter(_ => _.newTab).map(link => (
-        <Link
-          key={link.name}
-          href={link.url}
-          passHref
-        >
-          <a
-            className="link"
-            target="_blank"
-            rel='noreferrer'
-            aria-label={`${link.name} (opens in new window)`}
-          >
-            {link.name}
-          </a>
-        </Link>
-      ))}
+      {links
+        .filter(_ => _.newTab)
+        .map(link => (
+          <Link key={link.name} href={link.url} passHref>
+            <a
+              className="link"
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`${link.name} (opens in new window)`}
+            >
+              {link.name}
+            </a>
+          </Link>
+        ))}
     </div>
   )
 }

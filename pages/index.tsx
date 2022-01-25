@@ -8,14 +8,14 @@ export default function Index() {
     <>
       <Head>
         <title>{title()}</title>
-        <meta name="description" content="Simón Oroño. Computer scientist and software developer." />
+        <meta
+          name="description"
+          content="Simón Oroño. Computer scientist and software developer."
+        />
       </Head>
 
-      <Layout
-        h1="Simón Oroño"
-        h2="@simonorono"
-      >
-        <div className="mt-14 text-xl sm:max-w-lg space-y-8">
+      <Layout h1="Simón Oroño" h2="@simonorono">
+        <div className="mt-14 space-y-8 text-xl sm:max-w-lg">
           <p>
             I'm a computer scientist and software developer from Maracaibo,
             Venezuela. I work as a full-stack web developer.
