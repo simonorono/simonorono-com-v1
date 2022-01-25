@@ -1,4 +1,5 @@
 module.exports = {
   siteUrl: 'https://simonorono.com',
-  outDir: 'dist'
+  outDir: 'dist',
+  generateRobotsTxt: true,
 }
