@@ -11,7 +11,7 @@ export default function ProjectCard({ project }: Props) {
   const { name, description, tags, url, vcs } = project
 
   return (
-    <div className="flex flex-col space-y-4 border p-2">
+    <div className="flex flex-col space-y-4 rounded-md border-2 border-gray-400 p-2">
       <h3 className="text-2xl font-medium">{name}</h3>
 
       <div className="flex flex-col items-baseline space-y-3 sm:space-y-0">
