@@ -44,7 +44,11 @@ export default function Layout({ h1, h2, children }: Props) {
             <Header {...{ h1, h2 }} />
           </header>
 
-          <main className="flex-grow">{children}</main>
+          <main className="grow">
+            {children}
+
+            <div className="h-20" />
+          </main>
         </div>
       </div>
     </>
