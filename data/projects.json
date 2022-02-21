@@ -4,20 +4,47 @@
     "vcs": "https://github.com/simonorono/bitc",
     "url": "https://bitc.mcbodev.com",
     "description": "Bit containers for the JVM.",
-    "tags": ["kotlin", "jvm", "java"]
+    "tags": [
+      "kotlin",
+      "jvm",
+      "java"
+    ]
+  },
+  {
+    "name": "Pokémon Battle History",
+    "vcs": "https://github.com/simonorono/pkm-battles",
+    "url": "https://pkm-battles.mcbodev.com/",
+    "description": "Web app containing replays of battles from Pokémon Showdown!",
+    "tags": [
+      "typescript",
+      "react",
+      "tailwind",
+      "vite"
+    ]
   },
   {
     "name": "RDex",
     "vcs": "https://github.com/simonorono/rdex",
     "url": "https://rdex.mcbodev.com",
     "description": "Pokédex web application with support for all main game regions. Not yet fully complete.",
-    "tags": ["typescript", "react", "redux", "tailwind", "vite", "pokeapi"]
+    "tags": [
+      "typescript",
+      "react",
+      "redux",
+      "tailwind",
+      "vite",
+      "pokeapi"
+    ]
   },
   {
     "name": "Rixel",
     "vcs": "https://github.com/simonorono/rixel",
     "url": "https://rixel.mcbodev.com",
     "description": "Web application for pixelating images. Transformation is done in the browser. No server side code.",
-    "tags": ["typescript", "react", "canvas"]
+    "tags": [
+      "typescript",
+      "react",
+      "canvas"
+    ]
   }
 ]
