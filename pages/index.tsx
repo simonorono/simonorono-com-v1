@@ -15,8 +15,23 @@ export default function Index() {
         />
       </Head>
 
-      <Layout h1="Simón Oroño" h2="@simonorono">
+      <Layout>
         <div className="mt-14 space-y-10 text-xl sm:max-w-lg">
+          <h2 className="p-name text-2xl font-medium">
+            <a href="/">Simón Oroño</a>
+          </h2>
+
+          {process.env.NEXT_PUBLIC_GRAVATAR_HASH && (
+            <FixedSizeImage
+              src={`https://www.gravatar.com/avatar/${process.env.NEXT_PUBLIC_GRAVATAR_HASH}.jpg?s=155`}
+              alt="Simón Oroño's picture"
+              width={155}
+              height={155}
+              imageClassName="u-photo border border-gray-900 rounded-full"
+              containerClassName="mx-auto sm:mx-0"
+            />
+          )}
+
           <p>
             I'm a computer scientist and software developer from Maracaibo,
             Venezuela. I work as a full-stack web developer.
@@ -26,17 +41,6 @@ export default function Index() {
             My interests are programming languages, graph theory, discrete
             mathematics and video games.
           </p>
-
-          {process.env.NEXT_PUBLIC_GRAVATAR_HASH && (
-            <FixedSizeImage
-              src={`https://www.gravatar.com/avatar/${process.env.NEXT_PUBLIC_GRAVATAR_HASH}.jpg?s=155`}
-              alt="Simón Oroño's picture"
-              width={155}
-              height={155}
-              imageClassName="border border-gray-900 rounded-full"
-              containerClassName="mx-auto sm:mx-0"
-            />
-          )}
         </div>
       </Layout>
     </>
