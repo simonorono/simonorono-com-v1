@@ -6,7 +6,7 @@
     "build": "next build && next export -o dist && next-sitemap",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier -w **/*.{ts,tsx}"
+    "format": "prettier -w **/*.{ts,tsx,css}"
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.11",
