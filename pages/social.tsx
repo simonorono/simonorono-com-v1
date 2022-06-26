@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Layout from '../components/layout'
 import NewTabLink from '../components/new-tab-link'
 import { title } from '../utils'
+import Link from 'next/link'
 
 interface FriendCodeProps {
   title: string
@@ -55,6 +56,8 @@ export default function Social() {
 
       <Layout>
         <div className="prose space-y-6 text-lg sm:max-w-lg">
+          <Link href="/">{'<- back to index'}</Link>
+
           <p>
             I can be found on {ggAppLink}, {photomodeLink} and{' '}
             {pokedexTrackerLink}.
