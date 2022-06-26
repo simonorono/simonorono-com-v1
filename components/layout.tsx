@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react'
-import Footer from './footer'
 import Head from 'next/head'
 import Header from './header'
 
@@ -46,8 +45,6 @@ export default function Layout({ children }: Props) {
           <div className="p-8">{children}</div>
 
           <div className="h-20" />
-
-          <Footer />
         </main>
       </>
     </>
