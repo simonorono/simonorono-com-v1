@@ -23,37 +23,34 @@ function FriendCode({ title, code }: FriendCodeProps) {
 
 export default function Social() {
   const twitterLink = (
-    <NewTabLink
-      className="link"
-      name="@simonorono"
-      href="https://twitter.com/simonorono"
-    >
+    <NewTabLink className="link" href="https://twitter.com/simonorono">
       <span className="whitespace-nowrap">@simonorono</span>
+      <span className="sr-only"> (opens in new window)</span>
     </NewTabLink>
   )
 
   const ggAppLink = (
-    <NewTabLink
-      className="link"
-      name="GGApp"
-      href="https://ggapp.io/simonorono"
-    />
+    <NewTabLink className="link" href="https://ggapp.io/simonorono">
+      GGApp
+      <span className="sr-only">&nbsp;(opens in new window)</span>
+    </NewTabLink>
   )
 
   const photomodeLink = (
     <NewTabLink
       className="link"
-      name="photomode.io"
       href="https://photomode.io/profile/t15k8gpUj5PKRQ1AiK4Aeh9hfOB3"
-    />
+    >
+      photomode.io
+      <span className="sr-only">&nbsp;(opens in new window)</span>
+    </NewTabLink>
   )
 
   const pokedexTrackerLink = (
-    <NewTabLink
-      className="link"
-      name="Pokédex Tracker"
-      href="https://pokedextracker.com/u/simonorono"
-    />
+    <NewTabLink className="link" href="https://pokedextracker.com/u/simonorono">
+      Pokédex Tracker
+      <span className="sr-only">&nbsp;(opens in new window)</span>
+    </NewTabLink>
   )
 
   return (

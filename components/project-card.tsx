@@ -15,22 +15,18 @@ export default function ProjectCard({ project }: Props) {
       <h3 className="text-2xl font-medium">{name}</h3>
 
       <div className="flex flex-col items-baseline space-y-3 sm:space-y-0">
-        <NewTabLink
-          className="inline-flex items-center space-x-1"
-          href={url}
-          name={`${name} Website`}
-        >
+        <NewTabLink className="inline-flex items-center space-x-1" href={url}>
           <GlobeIcon className="h-5 w-5 text-black" aria-hidden="true" />
+          <span className="sr-only">{name}</span>
           <span> Website</span>
+          <span className="sr-only">&nbsp;(opens in new window)</span>
         </NewTabLink>
 
-        <NewTabLink
-          className="inline-flex items-center space-x-1"
-          href={vcs}
-          name={`${name} Repository`}
-        >
+        <NewTabLink className="inline-flex items-center space-x-1" href={vcs}>
           <CodeIcon className="h-5 w-5 text-black" aria-hidden="true" />
+          <span className="sr-only">{name}</span>
           <span> Repository</span>
+          <span className="sr-only">&nbsp;(opens in new window)</span>
         </NewTabLink>
       </div>
 
