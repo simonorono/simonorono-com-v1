@@ -2,7 +2,6 @@ import React from 'react'
 import Bio from './bio'
 import FixedSizeImage from './fixed-size-image'
 import ProfileLinks from './profile-links'
-import Links from './links'
 
 export default function Header() {
   return (
@@ -33,6 +32,10 @@ export default function Header() {
       <a href="/" className="text-center lg:w-full lg:text-left">
         <h1 className="text-xl font-medium">Simón Oroño</h1>
       </a>
+
+      <div className="flex justify-center space-x-6 lg:hidden">
+        <ProfileLinks />
+      </div>
 
       <article className="prose prose-slate hidden grow lg:block">
         <Bio />
