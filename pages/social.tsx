@@ -61,7 +61,7 @@ export default function Social() {
       </Head>
 
       <Layout>
-        <div className="mt-14 space-y-6 text-lg sm:max-w-lg">
+        <div className="prose space-y-6 text-lg sm:max-w-lg">
           <p>
             The only social network I'm active on is Twitter and my handle is{' '}
             {twitterLink}.
