@@ -11,7 +11,7 @@ export default function ProfileLinks() {
         className="inline-block h-10 w-10"
         target="_blank"
       >
-        <span className="sr-only">linkedin profile</span>
+        <span className="sr-only">linkedin profile (opens in new window)</span>
         <LinkedinIcon className="h-10 w-10" />
       </a>
 
@@ -20,7 +20,7 @@ export default function ProfileLinks() {
         className="inline-block h-10 w-10"
         target="_blank"
       >
-        <span className="sr-only">github profile</span>
+        <span className="sr-only">github profile (opens in new window)</span>
         <GithubIcon className="h-10 w-10" />
       </a>
 
@@ -29,7 +29,7 @@ export default function ProfileLinks() {
         className="inline-block h-10 w-10"
         target="_blank"
       >
-        <span className="sr-only">twitter profile</span>
+        <span className="sr-only">twitter profile (opens in new window)</span>
         <TwitterIcon className="h-10 w-10" />
       </a>
     </>
