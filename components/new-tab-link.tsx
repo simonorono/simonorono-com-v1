@@ -12,11 +12,7 @@ export default function NewTabLink(props: Props) {
 
   return (
     <Link href={href} passHref>
-      <a
-        className={`link ${className}`}
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a className={`link ${className}`} target="_blank" rel="noreferrer">
         {children}
       </a>
     </Link>
