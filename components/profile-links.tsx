@@ -1,7 +1,7 @@
 import React from 'react'
-import LinkedinIcon from './linkedin-icon'
-import GithubIcon from './github-icon'
-import TwitterIcon from './twitter-icon'
+import LinkedinIcon from './icons/linkedin-icon'
+import GithubIcon from './icons/github-icon'
+import TwitterIcon from './icons/twitter-icon'
 
 export default function ProfileLinks() {
   return (
