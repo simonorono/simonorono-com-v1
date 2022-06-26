@@ -11,7 +11,7 @@ export default function Bio() {
 
       <p>
         My interests are programming languages, graph theory, discrete
-        mathematics and <Link href="/social" className="link">video games</Link>.
+        mathematics and <Link href="/gaming" className="link">video games</Link>.
       </p>
     </>
   )

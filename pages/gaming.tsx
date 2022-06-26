@@ -19,7 +19,7 @@ function FriendCode({ title, code }: FriendCodeProps) {
   )
 }
 
-export default function Social() {
+export default function Gaming() {
   const ggAppLink = (
     <NewTabLink className="link" href="https://ggapp.io/simonorono">
       GGApp
@@ -47,10 +47,10 @@ export default function Social() {
   return (
     <>
       <Head>
-        <title>{title('Social')}</title>
+        <title>{title('Gaming')}</title>
         <meta
           name="description"
-          content="Where to find me. Social and gaming profiles."
+          content="Simón Oroño's gaming profiles."
         />
       </Head>
 
