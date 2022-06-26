@@ -14,16 +14,16 @@ export default function ProjectCard({ project }: Props) {
     <div className="flex flex-col space-y-4 border border-gray-400 p-4">
       <h3 className="text-2xl font-medium">{name}</h3>
 
-      <div className="flex flex-col items-baseline space-y-3 sm:space-y-0">
+      <div className="flex flex-col items-baseline space-y-4 sm:space-y-2">
         <NewTabLink className="inline-flex items-center space-x-1" href={url}>
-          <GlobeIcon className="h-5 w-5 text-black" aria-hidden="true" />
+          <GlobeIcon className="h-6 w-6 text-black" aria-hidden="true" />
           <span className="sr-only">{name}</span>
           <span> Website</span>
           <span className="sr-only">&nbsp;(opens in new window)</span>
         </NewTabLink>
 
         <NewTabLink className="inline-flex items-center space-x-1" href={vcs}>
-          <CodeIcon className="h-5 w-5 text-black" aria-hidden="true" />
+          <CodeIcon className="h-6 w-6 text-black" aria-hidden="true" />
           <span className="sr-only">{name}</span>
           <span> Repository</span>
           <span className="sr-only">&nbsp;(opens in new window)</span>
