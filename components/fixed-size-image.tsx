@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react'
 import LazyLoad from 'vanilla-lazyload'
 
-if (process.browser && !document.lazyLoadInstance) {
+const IS_BROWSER = typeof window !== 'undefined'
+
+if (IS_BROWSER && !document.lazyLoadInstance) {
   document.lazyLoadInstance = new LazyLoad({
     callback_loaded: el => el.classList.remove('opacity-0'),
     elements_selector: '[data-src]',
@@ -24,7 +26,7 @@ export default function FixedSizeImage(props: FixedSizeImageProps) {
   const { src, alt, width, height, containerClassName, imageClassName } = props
 
   useEffect(() => {
-    process.browser && document.lazyLoadInstance.update()
+    IS_BROWSER && document.lazyLoadInstance.update()
   }, [])
 
   const imageContainerStyle = {
