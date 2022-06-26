@@ -1,48 +1,28 @@
 import React from 'react'
-import Head from 'next/head'
 import Layout from '../components/layout'
-import FixedSizeImage from '../components/fixed-size-image'
-import { title } from '../utils'
+import ProjectCard from '../components/project-card'
+import projectData from '../data/projects.json'
 
 export default function Index() {
+  const projects = projectData as Project[]
+
   return (
-    <>
-      <Head>
-        <title>{title()}</title>
-        <meta
-          name="description"
-          content="Simón Oroño. Computer scientist and software developer."
-        />
-      </Head>
+    <Layout>
+      <div className="space-y-8">
+        <h2 className="text-2xl font-medium">Projects</h2>
 
-      <Layout>
-        <div className="mt-14 space-y-10 text-xl sm:max-w-lg">
-          <h2 className="p-name text-2xl font-medium">
-            <a href="/">Simón Oroño</a>
-          </h2>
+        <p className="prose prose-neutral">
+          Besides writing code for a living, I also like writing code for
+          recreational purposes. Here's a list of projects I've written in my
+          free time.
+        </p>
 
-          {process.env.NEXT_PUBLIC_GRAVATAR_HASH && (
-            <FixedSizeImage
-              src={`https://www.gravatar.com/avatar/${process.env.NEXT_PUBLIC_GRAVATAR_HASH}.jpg?s=155`}
-              alt="Simón Oroño's picture"
-              width={155}
-              height={155}
-              imageClassName="u-photo border border-gray-900 rounded-full"
-              containerClassName="mx-auto sm:mx-0"
-            />
-          )}
-
-          <p>
-            I'm a computer scientist and software developer from Maracaibo,
-            Venezuela. I work as a full-stack web developer.
-          </p>
-
-          <p className="rounded-full">
-            My interests are programming languages, graph theory, discrete
-            mathematics and video games.
-          </p>
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+          {projects.map(project => (
+            <ProjectCard key={project.name} project={project} />
+          ))}
         </div>
-      </Layout>
-    </>
+      </div>
+    </Layout>
   )
 }
