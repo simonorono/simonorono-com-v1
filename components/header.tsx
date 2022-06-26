@@ -5,14 +5,14 @@ import ProfileLinks from './profile-links'
 
 export default function Header() {
   return (
-    <div className="h-card flex flex-col items-center justify-center space-y-8 border-b bg-slate-100 p-10 shadow lg:fixed lg:inset-y-0 lg:w-96 lg:justify-start lg:border-b-0 lg:border-r">
+    <div className="h-card flex flex-col items-center justify-center space-y-8 border-b border-slate-300 bg-slate-100 p-10 shadow-lg lg:fixed lg:inset-y-0 lg:w-96 lg:justify-start lg:border-b-0 lg:border-r">
       {process.env.NEXT_PUBLIC_GRAVATAR_HASH && (
         <FixedSizeImage
           src={`https://www.gravatar.com/avatar/${process.env.NEXT_PUBLIC_GRAVATAR_HASH}.jpg?s=250`}
           alt="Simón Oroño's picture"
           width={250}
           height={250}
-          imageClassName="u-photo border border-slate-300 rounded-full bg-slate-200"
+          imageClassName="u-photo rounded-2xl border border-slate-300 bg-slate-200"
           containerClassName="mx-auto hidden sm:mx-0 lg:block"
         />
       )}
@@ -23,7 +23,7 @@ export default function Header() {
           alt="Simón Oroño's picture"
           width={200}
           height={200}
-          imageClassName="u-photo border border-slate-300 rounded-full bg-slate-200"
+          imageClassName="u-photo rounded-2xl border border-slate-300 bg-slate-200"
           containerClassName="mx-auto sm:mx-0 lg:hidden"
         />
       )}
