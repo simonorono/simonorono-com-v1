@@ -1,11 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import Layout from '../components/layout'
-import FixedSizeImage from '../components/fixed-size-image'
 import NewTabLink from '../components/new-tab-link'
 import { title } from '../utils'
-
-import mii from '../assets/mii.png'
 
 interface FriendCodeProps {
   title: string
@@ -80,15 +77,6 @@ export default function Social() {
           <FriendCode title="3DS Friend Code" code="0147-6024-1272" />
 
           <FriendCode title="Switch Friend Code" code="SW-6250-6376-2138" />
-
-          <FixedSizeImage
-            src={mii.src}
-            alt="Simón Oroño's Mii"
-            width={150}
-            height={150}
-            imageClassName="border border-gray-200 rounded-full"
-            containerClassName="mx-auto sm:mx-0"
-          />
         </div>
       </Layout>
     </>
