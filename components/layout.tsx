@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react'
+import Footer from './footer'
 import Head from 'next/head'
 import Header from './header'
 
@@ -36,21 +37,19 @@ export default function Layout({ children }: Props) {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      <div className="bg-green-900">
-        <div className="mx-auto max-w-screen-xl bg-white px-10">
-          <div className="mx-2 flex h-screen flex-col lg:mx-0">
-            <header>
-              <Header />
-            </header>
+      <>
+        <header>
+          <Header />
+        </header>
 
-            <main className="grow">
-              {children}
+        <main className="lg:ml-96 lg:min-h-screen">
+          <div className="p-8">{children}</div>
 
-              <div className="h-20" />
-            </main>
-          </div>
-        </div>
-      </div>
+          <div className="h-20" />
+
+          <Footer />
+        </main>
+      </>
     </>
   )
 }

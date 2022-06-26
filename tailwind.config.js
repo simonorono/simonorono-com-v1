@@ -10,5 +10,9 @@ module.exports = {
         sans: ['Inter', 'sans-serif']
       }
     }
-  }
+  },
+
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }
