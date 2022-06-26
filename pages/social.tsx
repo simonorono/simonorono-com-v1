@@ -19,13 +19,6 @@ function FriendCode({ title, code }: FriendCodeProps) {
 }
 
 export default function Social() {
-  const twitterLink = (
-    <NewTabLink className="link" href="https://twitter.com/simonorono">
-      <span className="whitespace-nowrap">@simonorono</span>
-      <span className="sr-only"> (opens in new window)</span>
-    </NewTabLink>
-  )
-
   const ggAppLink = (
     <NewTabLink className="link" href="https://ggapp.io/simonorono">
       GGApp
@@ -63,14 +56,11 @@ export default function Social() {
       <Layout>
         <div className="prose space-y-6 text-lg sm:max-w-lg">
           <p>
-            The only social network I'm active on is Twitter and my handle is{' '}
-            {twitterLink}.
-          </p>
-
-          <p>
-            I can also be found on {ggAppLink}, {photomodeLink} and{' '}
+            I can be found on {ggAppLink}, {photomodeLink} and{' '}
             {pokedexTrackerLink}.
           </p>
+
+          <p>Here are some gaming related friend codes:</p>
 
           <FriendCode title="Discord" code="simonorono#7279" />
 

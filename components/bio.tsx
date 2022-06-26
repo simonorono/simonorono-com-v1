@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function Bio() {
   return (
@@ -10,7 +11,7 @@ export default function Bio() {
 
       <p>
         My interests are programming languages, graph theory, discrete
-        mathematics and video games.
+        mathematics and <Link href="/social" className="link">video games</Link>.
       </p>
     </>
   )
