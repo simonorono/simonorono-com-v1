@@ -2,6 +2,12 @@ import React from 'react'
 import Link from 'next/link'
 
 export default function Bio() {
+  const gamingProfile = (
+    <Link href="/gaming" className="link">
+      video games
+    </Link>
+  )
+
   return (
     <>
       <p>
@@ -11,7 +17,7 @@ export default function Bio() {
 
       <p>
         My interests are programming languages, graph theory, discrete
-        mathematics and <Link href="/gaming" className="link">video games</Link>.
+        mathematics and {gamingProfile}.
       </p>
     </>
   )
