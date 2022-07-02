@@ -55,12 +55,12 @@ export default function Gaming() {
         <div className="prose space-y-6 text-lg sm:max-w-lg">
           <Link href="/">{'<- back to index'}</Link>
 
+          <h1 className="text-3xl font-medium">Gaming profile</h1>
+
           <p>
             I can be found on {ggAppLink}, {photomodeLink} and{' '}
-            {pokedexTrackerLink}.
+            {pokedexTrackerLink}. Here are some gaming related friend codes:
           </p>
-
-          <p>Here are some gaming related friend codes:</p>
 
           <FriendCode title="Discord" code="simonorono#7279" />
 

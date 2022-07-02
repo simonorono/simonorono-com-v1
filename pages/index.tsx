@@ -26,7 +26,7 @@ export default function Index() {
               <Bio />
             </div>
 
-            <h2 className="text-2xl font-medium">Projects</h2>
+            <h2 className="text-3xl font-medium">Projects</h2>
 
             <p>
               Besides writing code for a living, I also like writing code for
