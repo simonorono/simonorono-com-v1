@@ -46,7 +46,7 @@ export default function Gaming() {
   return (
     <>
       <Head>
-        <title>{title('Gaming')}</title>
+        <title>{title('Gaming Profile')}</title>
         <meta name="description" content="Simón Oroño's gaming profiles." />
       </Head>
 
