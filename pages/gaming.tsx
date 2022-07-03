@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from 'next/head'
-import Layout from '../components/layout'
 import NewTabLink from '../components/new-tab-link'
 import { title } from '../utils'
 import Link from 'next/link'
@@ -51,7 +50,7 @@ export default function Gaming() {
         <meta name="description" content="Simón Oroño's gaming profiles." />
       </Head>
 
-      <Layout>
+      <>
         <div className="prose space-y-6 text-lg sm:max-w-lg">
           <Link href="/">{'<- back to index'}</Link>
 
@@ -68,7 +67,7 @@ export default function Gaming() {
 
           <FriendCode title="Switch Friend Code" code="SW-6250-6376-2138" />
         </div>
-      </Layout>
+      </>
     </>
   )
 }

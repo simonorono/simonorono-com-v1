@@ -1,7 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
 import Bio from '../components/bio'
-import Layout from '../components/layout'
 import ProjectCard from '../components/project-card'
 import projectData from '../data/projects.json'
 import { title } from '../utils'
@@ -19,7 +18,7 @@ export default function Index() {
         />
       </Head>
 
-      <Layout>
+      <>
         <div className="space-y-8">
           <div className="prose">
             <div className="lg:hidden">
@@ -41,7 +40,7 @@ export default function Index() {
             ))}
           </div>
         </div>
-      </Layout>
+      </>
     </>
   )
 }
