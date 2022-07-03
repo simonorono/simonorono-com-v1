@@ -24,8 +24,8 @@ export default function Header() {
               alt="Simón Oroño's picture"
               width={250}
               height={250}
-              imageClassName="u-photo bg-slate-200"
-              containerClassName="mx-auto rounded-2xl hidden border border-slate-300 sm:mx-0 lg:block overflow-hidden"
+              imageClassName="u-photo rounded-2xl border border-slate-300 bg-slate-200"
+              containerClassName="mx-auto hidden sm:mx-0 lg:block"
             />
           )}
 

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
 
 interface FixedSizeImageProps {
   src: string
@@ -22,7 +21,7 @@ export default function FixedSizeImage(props: FixedSizeImageProps) {
 
   return (
     <div style={imageContainerStyle} className={containerClassName}>
-      <Image
+      <img
         src={src}
         alt={alt}
         width={width}
