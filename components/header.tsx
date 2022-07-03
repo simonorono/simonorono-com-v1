@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <div className="h-card flex flex-col items-center justify-center space-y-8 border-b border-slate-300 bg-slate-100 p-10 shadow-lg lg:fixed lg:inset-y-0 lg:w-96 lg:justify-start lg:border-b-0 lg:border-r">
       <Link passHref href="/">
-        <a className="block">
+        <a className="u-url u-uid block" rel="me">
           {process.env.NEXT_PUBLIC_GRAVATAR_HASH && (
             <FixedSizeImage
               src={`https://www.gravatar.com/avatar/${process.env.NEXT_PUBLIC_GRAVATAR_HASH}.jpg?s=250`}
