@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Image from 'next/image'
 
 interface FixedSizeImageProps {
   src: string
@@ -12,6 +13,8 @@ interface FixedSizeImageProps {
 export default function FixedSizeImage(props: FixedSizeImageProps) {
   const { src, alt, width, height, containerClassName, imageClassName } = props
 
+  const [loaded, setIfLoaded] = useState(false)
+
   const imageContainerStyle = {
     maxWidth: `${width}px`,
     maxHeight: `${height}px`,
@@ -19,12 +22,15 @@ export default function FixedSizeImage(props: FixedSizeImageProps) {
 
   return (
     <div style={imageContainerStyle} className={containerClassName}>
-      <img
+      <Image
         src={src}
         alt={alt}
         width={width}
         height={height}
-        className={imageClassName}
+        className={`transition-opacity ${
+          loaded ? 'opacity-100' : 'opacity-0'
+        } ${imageClassName}`}
+        onLoad={() => setIfLoaded(true)}
       />
     </div>
   )
