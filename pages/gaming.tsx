@@ -63,9 +63,10 @@ export default function Gaming() {
 
           <FriendCode title="Discord" code="simonorono#7279" />
 
-          <FriendCode title="3DS Friend Code" code="0147-6024-1272" />
-
-          <FriendCode title="Switch Friend Code" code="SW-6250-6376-2138" />
+          <FriendCode
+            title="Nintendo Switch Friend Code"
+            code="SW-6250-6376-2138"
+          />
         </div>
       </>
     </>
