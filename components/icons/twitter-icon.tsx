@@ -5,6 +5,7 @@ interface Props {
 export default function TwitterIcon(props: Props) {
   const { className } = props
 
+  // SVG from https://remixicon.com/
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
