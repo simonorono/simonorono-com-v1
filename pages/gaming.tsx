@@ -1,8 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
-import NewTabLink from '../components/new-tab-link'
 import { title } from '../utils'
-import Link from 'next/link'
+import Link from '../components/link'
 
 interface FriendCodeProps {
   title: string
@@ -20,27 +19,27 @@ function FriendCode({ title, code }: FriendCodeProps) {
 
 export default function Gaming() {
   const ggAppLink = (
-    <NewTabLink className="link" href="https://ggapp.io/simonorono">
+    <Link className="link" href="https://ggapp.io/simonorono">
       GGApp
       <span className="sr-only">&nbsp;(opens in new window)</span>
-    </NewTabLink>
+    </Link>
   )
 
   const photomodeLink = (
-    <NewTabLink
+    <Link
       className="link"
       href="https://photomode.io/profile/t15k8gpUj5PKRQ1AiK4Aeh9hfOB3"
     >
       photomode.io
       <span className="sr-only">&nbsp;(opens in new window)</span>
-    </NewTabLink>
+    </Link>
   )
 
   const pokedexTrackerLink = (
-    <NewTabLink className="link" href="https://pokedextracker.com/u/simonorono">
+    <Link className="link" href="https://pokedextracker.com/u/simonorono">
       Pokédex Tracker
       <span className="sr-only">&nbsp;(opens in new window)</span>
-    </NewTabLink>
+    </Link>
   )
 
   return (

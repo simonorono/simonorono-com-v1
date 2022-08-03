@@ -1,7 +1,7 @@
 import React from 'react'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Bio from './bio'
+import Link from './link'
 import ProfilePicture from './profile-picture'
 import ProfileLinks from './profile-links'
 
@@ -16,16 +16,12 @@ export default function Header() {
 
   return (
     <div className="h-card flex flex-col items-center justify-center space-y-8 border-b border-slate-300 bg-slate-100 p-10 shadow-lg lg:fixed lg:inset-y-0 lg:w-96 lg:justify-start lg:border-b-0 lg:border-r">
-      <Link passHref href="/">
-        <a className="u-url u-uid block" rel="me">
-          <ProfilePicture />
-        </a>
+      <Link className="u-url u-uid block" href="/" rel="me">
+        <ProfilePicture />
       </Link>
 
-      <Link href="/" passHref>
-        <a className="text-center lg:w-full lg:text-left">
-          {name(pathname === '/')}
-        </a>
+      <Link className="text-center lg:w-full lg:text-left" href="/">
+        {name(pathname === '/')}
       </Link>
 
       <div className="flex justify-center space-x-6 lg:hidden">

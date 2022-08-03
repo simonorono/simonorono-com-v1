@@ -1,9 +1,9 @@
 import React from 'react'
-import Link from 'next/link'
+import Link from './link'
 
 export default function Bio() {
   const gamingProfile = (
-    <Link href="/gaming" className="link">
+    <Link className="link" href="/gaming">
       video games
     </Link>
   )
