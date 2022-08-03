@@ -11,6 +11,19 @@
     ]
   },
   {
+    "name": "Mcbo Notes",
+    "vcs": "https://github.com/simonorono/mcbo-notes",
+    "url": "https://github.com/simonorono/mcbo-notes#readme",
+    "description": "Note taking application built with the purpose to test Tauri capabilities for creating desktop applications.",
+    "tags": [
+      "typescript",
+      "rust",
+      "react",
+      "tailwind",
+      "tauri"
+    ]
+  },
+  {
     "name": "Pokémon Battle History",
     "vcs": "https://github.com/simonorono/pkm-battles",
     "url": "https://pkm-battles.mcbodev.com/",
@@ -45,19 +58,6 @@
       "typescript",
       "react",
       "canvas"
-    ]
-  },
-  {
-    "name": "Mcbo Notes",
-    "vcs": "https://github.com/simonorono/mcbo-notes",
-    "url": "https://github.com/simonorono/mcbo-notes#readme",
-    "description": "Note taking application built with the purpose to test Tauri capabilities for creating desktop applications.",
-    "tags": [
-      "typescript",
-      "rust",
-      "react",
-      "tailwind",
-      "tauri"
     ]
   }
 ]
