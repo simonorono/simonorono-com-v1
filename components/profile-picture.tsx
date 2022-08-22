@@ -9,7 +9,7 @@ export default function ProfilePicture() {
   return (
     <>
       {imageUrl && (
-        <div className="h-[200px] w-[200px] rounded-2xl border border-slate-300 bg-slate-200 lg:h-[250px] lg:w-[250px]">
+        <div className="h-[200px] w-[200px] overflow-hidden rounded-2xl border border-slate-300 bg-slate-200 lg:h-[250px] lg:w-[250px]">
           <picture>
             <source
               media="(max-width: 1023px)"
