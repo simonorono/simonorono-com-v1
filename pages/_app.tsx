@@ -42,7 +42,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         </header>
 
         <main className="lg:ml-96 lg:min-h-screen">
-          <div className="py-8 px-4">
+          <div className="py-8 px-4 sm:px-8">
             <Component {...pageProps} />
           </div>
 
