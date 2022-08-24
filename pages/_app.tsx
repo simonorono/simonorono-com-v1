@@ -1,6 +1,7 @@
 import React from 'react'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import Header from '../components/header'
 
 import '@fontsource/inter/variable.css'
@@ -13,6 +14,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <link rel="canonical" href={`${process.env.NEXT_PUBLIC_BASE_URL || ''}${useRouter().asPath}`}/>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
