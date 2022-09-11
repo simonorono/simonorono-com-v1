@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import { title } from '../utils'
+import BackHome from '../components/back-home'
 import Link from '../components/link'
 
 interface FriendCodeProps {
@@ -50,9 +51,7 @@ export default function Gaming() {
       </Head>
 
       <>
-        <div className="prose space-y-6 text-lg sm:max-w-lg">
-          <Link href="/">{'<- back to index'}</Link>
-
+        <div className="prose mt-6 space-y-6 text-lg sm:max-w-lg">
           <h1 className="text-3xl font-medium">Gaming profile</h1>
 
           <p>
@@ -67,6 +66,8 @@ export default function Gaming() {
             code="SW-6250-6376-2138"
           />
         </div>
+
+        <BackHome className="mt-6" />
       </>
     </>
   )
