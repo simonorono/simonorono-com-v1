@@ -3,7 +3,7 @@
     "name": "bitc",
     "vcs": "https://github.com/simonorono/bitc",
     "url": "https://bitc.mcbodev.com",
-    "description": "Bit containers library targetting the JVM. Written in Kotlin."
+    "description": "Bit containers library targeting the JVM. Written in Kotlin."
   },
   {
     "name": "Mcbo Notes",
