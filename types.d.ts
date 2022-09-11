@@ -1,7 +1,7 @@
 interface Project {
   name: string,
   description: string,
-  url: string,
+  url?: string,
   vcs: string,
   tags: string[],
 }

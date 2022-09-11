@@ -34,7 +34,7 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
             {projects.map(project => (
               <ProjectCard key={project.name} project={project} />
             ))}
