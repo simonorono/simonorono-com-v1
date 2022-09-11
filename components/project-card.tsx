@@ -1,5 +1,5 @@
 import React from 'react'
-import { CodeBracketIcon, GlobeAltIcon } from '@heroicons/react/24/outline'
+import { CodeBracketSquareIcon, LinkIcon } from '@heroicons/react/24/outline'
 import Link from './link'
 import Tag from './tag'
 
@@ -25,7 +25,7 @@ export default function ProjectCard({ project }: Props) {
       <div className="flex items-baseline space-x-4">
         {url && (
           <Link className="link inline-flex items-center space-x-1" href={url}>
-            <GlobeAltIcon className="h-6 w-6 text-black" aria-hidden="true" />
+            <LinkIcon className="h-5 w-5 text-black" aria-hidden="true" />
             <span className="sr-only">{name}</span>
             <span> Website</span>
             <span className="sr-only">&nbsp;(opens in new window)</span>
@@ -33,7 +33,7 @@ export default function ProjectCard({ project }: Props) {
         )}
 
         <Link className="link inline-flex items-center space-x-1" href={vcs}>
-          <CodeBracketIcon className="h-6 w-6 text-black" aria-hidden="true" />
+          <CodeBracketSquareIcon className="h-5 w-5 text-black" aria-hidden="true" />
           <span className="sr-only">{name}</span>
           <span> Repository</span>
           <span className="sr-only">&nbsp;(opens in new window)</span>
