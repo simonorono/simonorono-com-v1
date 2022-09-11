@@ -8,19 +8,13 @@ interface Props {
 }
 
 export default function ProjectCard({ project }: Props) {
-  const { name, description, tags, url, vcs } = project
+  const { name, description, url, vcs } = project
 
   return (
     <div className="flex flex-col space-y-4 border-b p-4 sm:border-0">
       <h3 className="text-xl font-medium">{name}</h3>
 
       <p className="prose pt-2">{description}</p>
-
-      <div className="relative bottom-0 space-y-2">
-        {tags.map(tag => (
-          <Tag className="mr-2" key={tag} text={tag} />
-        ))}
-      </div>
 
       <div className="flex items-baseline space-x-4">
         {url && (
