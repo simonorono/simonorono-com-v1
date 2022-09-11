@@ -8,6 +8,10 @@ import '@fontsource/inter/variable.css'
 import '../styles/main.css'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
+  const path = useRouter().asPath
+
+  const canonicalPath = path === '/' ? '' : path
+
   return (
     <>
       <Head>
@@ -16,9 +20,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
         <link
           rel="canonical"
-          href={`${process.env.NEXT_PUBLIC_BASE_URL || ''}${
-            useRouter().asPath
-          }`}
+          href={`${process.env.NEXT_PUBLIC_BASE_URL || ''}${canonicalPath}`}
         />
         <link
           rel="apple-touch-icon"
