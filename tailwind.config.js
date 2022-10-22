@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -16,6 +18,9 @@ module.exports = {
   },
 
   plugins: [
-    require('@tailwindcss/typography')
+    require('@tailwindcss/typography'),
+    plugin(function ({ addVariant }) {
+      addVariant('fine-pointer', '@media (pointer: fine)')
+    }),
   ],
 }
