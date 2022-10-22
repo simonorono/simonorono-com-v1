@@ -17,7 +17,11 @@ export default function ProjectCard({ project }: Props) {
 
       <div className="flex items-baseline space-x-4">
         {url && (
-          <Link className="link inline-flex items-center space-x-1" href={url}>
+          <Link
+            className="link inline-flex items-center space-x-1"
+            href={url}
+            newTab
+          >
             <LinkIcon className="h-5 w-5 text-black" aria-hidden="true" />
             <span className="sr-only">{name}</span>
             <span> Website</span>
@@ -25,7 +29,11 @@ export default function ProjectCard({ project }: Props) {
           </Link>
         )}
 
-        <Link className="link inline-flex items-center space-x-1" href={vcs}>
+        <Link
+          className="link inline-flex items-center space-x-1"
+          href={vcs}
+          newTab
+        >
           <CodeBracketSquareIcon
             className="h-5 w-5 text-black"
             aria-hidden="true"
