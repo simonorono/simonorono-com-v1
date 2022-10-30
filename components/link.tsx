@@ -14,13 +14,10 @@ export default function Link(props: Props) {
 
   let anchorAttributes = {
     className,
+    href,
     rel,
     target: newTab ? '_blank' : '_self',
   }
 
-  return (
-    <NextLink passHref href={href}>
-      <a {...anchorAttributes}>{children}</a>
-    </NextLink>
-  )
+  return <NextLink {...anchorAttributes}>{children}</NextLink>
 }
