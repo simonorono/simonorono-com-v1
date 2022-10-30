@@ -32,7 +32,7 @@ export default function Header() {
         <Bio />
       </article>
 
-      <div className="flex hidden space-x-6 lg:block">
+      <div className="hidden space-x-6 lg:block">
         <ProfileLinks />
       </div>
     </div>
