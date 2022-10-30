@@ -20,7 +20,7 @@ function FriendCode({ title, code }: FriendCodeProps) {
 
 export default function Gaming() {
   const ggAppLink = (
-    <Link className="link" href="https://ggapp.io/simonorono">
+    <Link className="link" href="https://ggapp.io/simonorono" newTab>
       GGApp
       <span className="sr-only">&nbsp;(opens in new window)</span>
     </Link>
@@ -30,6 +30,7 @@ export default function Gaming() {
     <Link
       className="link"
       href="https://photomode.io/profile/t15k8gpUj5PKRQ1AiK4Aeh9hfOB3"
+      newTab
     >
       photomode.io
       <span className="sr-only">&nbsp;(opens in new window)</span>
@@ -37,7 +38,11 @@ export default function Gaming() {
   )
 
   const pokedexTrackerLink = (
-    <Link className="link" href="https://pokedextracker.com/u/simonorono">
+    <Link
+      className="link"
+      href="https://pokedextracker.com/u/simonorono"
+      newTab
+    >
       Pokédex Tracker
       <span className="sr-only">&nbsp;(opens in new window)</span>
     </Link>
