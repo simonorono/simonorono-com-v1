@@ -8,7 +8,7 @@ import '@fontsource/inter/variable.css'
 import '../styles/main.css'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  const path = useRouter().asPath
+  const path = useRouter().pathname
 
   const canonicalPath = path === '/' ? '' : path
 
