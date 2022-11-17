@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o dist && next-sitemap && node fix-canonical.js",
+    "build": "next build && next export -o dist && next-sitemap",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier -w **/*.{ts,tsx,css}"
