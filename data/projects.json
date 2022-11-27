@@ -23,9 +23,9 @@
     "description": "Pokédex web application with support for all main game regions. Not yet fully complete."
   },
   {
-    "name": "Rixel",
-    "vcs": "https://github.com/simonorono/rixel",
-    "url": "https://rixel.mcbodev.com",
+    "name": "Pixelate",
+    "vcs": "https://github.com/simonorono/pixelate",
+    "url": "https://pixelate.mcbodev.com",
     "description": "Web application for pixelating images. Transformation is done in the browser. No server side code."
   }
 ]
