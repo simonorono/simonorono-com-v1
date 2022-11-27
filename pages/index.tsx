@@ -5,8 +5,12 @@ import ProjectCard from '../components/project-card'
 import projectData from '../data/projects.json'
 import { title } from '../utils'
 
+function sortProjectsCompareFn(a: Project, b: Project) {
+  return a.name.toLowerCase() > b.name.toLowerCase() ? 1 : 0
+}
+
 export default function Index() {
-  const projects = projectData as Project[]
+  const projects = (projectData as Project[]).sort(sortProjectsCompareFn)
 
   return (
     <>
