@@ -1,5 +1,11 @@
 [
   {
+    "name": "Advent of Code results",
+    "vcs": "https://github.com/simonorono/advent-of-code",
+    "url": "https://aoc.mcbodev.com",
+    "description": "Website with solutions for the Advent of Code problems. Solutions are calculated when the site is building."
+  },
+  {
     "name": "bitc",
     "vcs": "https://github.com/simonorono/bitc",
     "url": "https://bitc.mcbodev.com",
@@ -9,6 +15,12 @@
     "name": "Mcbo Notes",
     "vcs": "https://github.com/simonorono/mcbo-notes",
     "description": "Note taking application built with the purpose to test Tauri capabilities for creating desktop applications."
+  },
+  {
+    "name": "Pixelate",
+    "vcs": "https://github.com/simonorono/pixelate",
+    "url": "https://pixelate.mcbodev.com",
+    "description": "Web application for pixelating images. Transformation is done in the browser. No server side code."
   },
   {
     "name": "Pokémon Battle History",
@@ -21,11 +33,5 @@
     "vcs": "https://github.com/simonorono/rdex",
     "url": "https://rdex.mcbodev.com",
     "description": "Pokédex web application with support for all main game regions. Not yet fully complete."
-  },
-  {
-    "name": "Pixelate",
-    "vcs": "https://github.com/simonorono/pixelate",
-    "url": "https://pixelate.mcbodev.com",
-    "description": "Web application for pixelating images. Transformation is done in the browser. No server side code."
   }
 ]
