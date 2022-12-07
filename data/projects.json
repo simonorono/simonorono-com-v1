@@ -1,11 +1,5 @@
 [
   {
-    "name": "Advent of Code results",
-    "vcs": "https://github.com/simonorono/advent-of-code",
-    "url": "https://aoc.mcbodev.com",
-    "description": "Website with solutions for the Advent of Code problems. Solutions are calculated when the site is building."
-  },
-  {
     "name": "bitc",
     "vcs": "https://github.com/simonorono/bitc",
     "url": "https://bitc.mcbodev.com",
