@@ -1,6 +1,7 @@
 import React from 'react'
 import LinkedinIcon from './icons/linkedin-icon'
 import GithubIcon from './icons/github-icon'
+import MastodonIcon from './icons/mastodon-icon'
 import StackOverflowIcon from './icons/stack-overflow-icon'
 import TwitterIcon from './icons/twitter-icon'
 import Link from './link'
@@ -26,6 +27,16 @@ export default function ProfileLinks() {
       >
         <span className="sr-only">github profile (opens in new window)</span>
         <GithubIcon className="h-10 w-10" />
+      </Link>
+
+      <Link
+        href="https://mastodon.social/@simonorono"
+        className="inline-block h-10 w-10"
+        newTab={true}
+        rel="me"
+      >
+        <span className="sr-only">mastodon profile (opens in new window)</span>
+        <MastodonIcon className="h-10 w-10" />
       </Link>
 
       <Link
