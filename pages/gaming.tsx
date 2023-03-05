@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
-import { title } from '../utils'
 import BackHome from '../components/back-home'
 import Link from '../components/link'
+import { title } from '../utils'
 
 interface FriendCodeProps {
   title: string
@@ -37,13 +37,13 @@ export default function Gaming() {
     </Link>
   )
 
-  const pokedexTrackerLink = (
+  const superEffectiveLink = (
     <Link
       className="link"
-      href="https://pokedextracker.com/u/simonorono"
+      href="https://supereffective.gg/apps/livingdex/fOHUWMujCcNduz4leWjM"
       newTab
     >
-      Pokédex Tracker
+      supereffective.gg
       <span className="sr-only">&nbsp;(opens in new window)</span>
     </Link>
   )
@@ -60,8 +60,8 @@ export default function Gaming() {
           <h1 className="text-3xl font-medium">Gaming profile</h1>
 
           <p>
-            I can be found on {ggAppLink}, {photomodeLink} and{' '}
-            {pokedexTrackerLink}. Here are some gaming related friend codes:
+            I can be found on {ggAppLink}, {superEffectiveLink} and{' '}
+            {photomodeLink}. Here are some gaming related friend codes:
           </p>
 
           <FriendCode title="Discord" code="simonorono#7279" />
