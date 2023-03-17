@@ -4,13 +4,17 @@ import Link from './link'
 
 interface Props {
   project: Project
+  className?: string
 }
 
-export default function ProjectCard({ project }: Props) {
+export default function ProjectCard(props: Props) {
+  const { project, className } = props
   const { name, description, url, vcs } = project
 
   return (
-    <div className="flex flex-col space-y-4 border-b p-4 transition-all duration-300 fine-pointer:hover:shadow-project sm:rounded-md sm:border-0">
+    <div
+      className={`flex flex-col space-y-4 p-4 transition-all duration-300 fine-pointer:hover:shadow-project ${className}`}
+    >
       <h3 className="text-xl font-medium">{name}</h3>
 
       <p className="prose pt-2">{description}</p>

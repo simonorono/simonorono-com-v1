@@ -1,17 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
 import Bio from '../components/bio'
-import ProjectCard from '../components/project-card'
-import projectData from '../data/projects.json'
+import Projects from '../components/projects'
 import { title } from '../utils'
 
-function sortProjectsCompareFn(a: Project, b: Project) {
-  return a.name.toLowerCase() > b.name.toLowerCase() ? 1 : 0
-}
-
 export default function Index() {
-  const projects = (projectData as Project[]).sort(sortProjectsCompareFn)
-
   return (
     <>
       <Head>
@@ -38,11 +31,7 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
-            {projects.map(project => (
-              <ProjectCard key={project.name} project={project} />
-            ))}
-          </div>
+          <Projects />
         </div>
       </>
     </>
