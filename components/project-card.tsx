@@ -17,7 +17,7 @@ export default function ProjectCard(props: Props) {
     >
       <h3 className="text-xl font-medium">{name}</h3>
 
-      <p className="prose pt-2">{description}</p>
+      <p className="prose flex-grow pt-2">{description}</p>
 
       <div className="flex items-baseline space-x-4">
         {url && (
