@@ -55,7 +55,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             <Component {...pageProps} />
           </div>
 
-          <div className="h-20" />
+          <div className="h-10" />
         </main>
       </>
     </>
