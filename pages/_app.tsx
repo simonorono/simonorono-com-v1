@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Header from '../components/header'
 
-import '@fontsource/inter/variable.css'
+import '@fontsource-variable/inter/index.css'
 import '../styles/main.css'
 
 export default function MyApp({ Component, pageProps }: AppProps) {

@@ -9,7 +9,7 @@
     "format": "prettier -w **/*.{ts,tsx,css}"
   },
   "dependencies": {
-    "@fontsource/inter": "^4.5.15",
+    "@fontsource-variable/inter": "^5.0.1",
     "@heroicons/react": "^2.0.17",
     "next": "13.3.0",
     "react": "18.2.0",
