@@ -64,7 +64,7 @@ export default function Gaming() {
             {photomodeLink}. Here are some gaming related friend codes:
           </p>
 
-          <FriendCode title="Discord" code="simonorono#7279" />
+          <FriendCode title="Discord" code="simonorono" />
 
           <FriendCode
             title="Nintendo Switch Friend Code"
