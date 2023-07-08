@@ -4,6 +4,9 @@ import Bio from '../components/bio'
 import Projects from '../components/projects'
 import { title } from '../utils'
 
+import otherLinks from '../data/other-links.json'
+import Link from '../components/link'
+
 export default function Index() {
   return (
     <>
@@ -32,6 +35,22 @@ export default function Index() {
           </div>
 
           <Projects />
+
+          <hr />
+
+          <div className="mt-4">
+            <h2 className="text-2xl font-medium">Other links</h2>
+          </div>
+
+          <ul className="ml-4 list-disc">
+            {otherLinks.map(link => (
+              <li key={link.url}>
+                <Link className="link" href={link.url}>
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </>
     </>
