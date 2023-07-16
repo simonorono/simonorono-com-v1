@@ -45,7 +45,7 @@ export default function Index() {
           <ul className="ml-4 list-disc">
             {otherLinks.map(link => (
               <li key={link.url}>
-                <Link className="link" href={link.url}>
+                <Link className="link" href={link.url} newTab>
                   {link.label}
                 </Link>
               </li>
