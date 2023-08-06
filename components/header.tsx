@@ -24,17 +24,13 @@ export default function Header() {
         {name(pathname === '/')}
       </Link>
 
-      <div className="flex justify-center space-x-6 lg:hidden">
-        <ProfileLinks />
-      </div>
+      <ProfileLinks className="lg:hidden" />
 
       <article className="p-note prose prose-slate hidden grow lg:block">
         <Bio />
       </article>
 
-      <div className="hidden space-x-6 lg:block">
-        <ProfileLinks />
-      </div>
+      <ProfileLinks className="hidden lg:block" />
     </div>
   )
 }
