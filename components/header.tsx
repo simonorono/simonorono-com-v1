@@ -6,7 +6,7 @@ import ProfilePicture from './profile-picture'
 import ProfileLinks from './profile-links'
 
 function name(h1: boolean) {
-  const Title = (h1 ? 'h1' : 'h2') as keyof JSX.IntrinsicElements
+  const Title = (h1 ? 'h1' : 'h2') as keyof React.JSX.IntrinsicElements
 
   return <Title className="p-name text-xl font-medium">Simón Oroño</Title>
 }
